@@ -11,6 +11,7 @@ const BadProductPage:React.FC<ComponentProps> = ({ product, addToCart }) => {
   // ❌ Avoid: Event-specific logic inside an Effect
   useEffect(() => {
     if (product.isInCart) {
+      // any shared logic
     }
   }, [product])
   console.timeEnd('❌')

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import {
+  BadForm,
   BadList,
   BadProductPage,
   BadProfilePage,
@@ -8,6 +9,7 @@ import {
   BasedOnPropsUpdateWellDone,
   CachingExpensiveCalculations,
   CachingExpensiveCalculationsWellDone,
+  GoodForm,
   GoodList,
   GoodProductPage,
   GoodProfilePage,
@@ -163,6 +165,24 @@ function App() {
         )}
         <br />
       </div>
+
+      <div>
+        <button onClick={() => clickHandler(6)}>{`${
+          findId(6) ? "HIDE" : "SHOW"
+        } CASE 6: `}</button>
+        <span> Sending POST request </span>
+        <br /><br />
+        {findId(6) && (
+          <div>
+            <BadForm />
+            <br />
+
+            <GoodForm />
+          </div>
+        )}
+        <br />
+      </div>
+
     </div>
   );
 }

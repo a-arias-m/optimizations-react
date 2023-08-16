@@ -8,3 +8,5 @@ export { BadList } from './04 Bad-AdjustSomeStateOnPropChange';
 export { GoodList } from './04 Good-AdjustSomeStateOnPropChange';
 export { BadProductPage } from './05 Bad-ProductPage';
 export { GoodProductPage } from './05 Good-ProductPage';
+export { BadForm } from './06 Bad-Form';
+export { GoodForm } from './06 Good-Form';

@@ -17,6 +17,8 @@ const BadForm = () => {
     if (jsonToSubmit !== null) {
       post("/api/register", name + " " + country, '❌');
     }
+    // disabling the rule only leads to bugs, but for this example is ok
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [jsonToSubmit]);
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
